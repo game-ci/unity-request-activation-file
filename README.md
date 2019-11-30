@@ -67,5 +67,5 @@ actions.
 ## More actions
 
 Visit 
-[webbertakken/unity-actions](https://github.com/webbertakken/unity-actions) 
+[Unity Actions](https://github.com/webbertakken/unity-actions) 
 to find related actions for Unity.
