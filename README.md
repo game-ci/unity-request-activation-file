@@ -22,6 +22,7 @@ on: [push]
 jobs:
   activation:
     name: Request manual activation file 🔑
+    runs-on: ubuntu-latest
     steps:
 ```
 
