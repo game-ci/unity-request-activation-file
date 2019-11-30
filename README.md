@@ -12,6 +12,12 @@ actions from the
 [Unity Actions](https://github.com/webbertakken/unity-actions) 
 collection.
 
+### Documentation
+
+See the 
+[Unity Actions](https://github.com/webbertakken/unity-actions)
+collection repository for workflow documentation and reference implementation.
+
 ## Usage
 
 Create a file called `.github/workflows/activation.yml` and add a job to it.
