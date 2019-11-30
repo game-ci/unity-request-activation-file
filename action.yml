@@ -1,8 +1,13 @@
 name: 'Unity - Request Activation File'
+author: Webber Takken <webber@takken.io>
 description: 'Request the manual activation file for acquiring a Unity personal license.'
+inputs: {}
 outputs:
   filePath:
     description: 'Path of the manual activation file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+branding:
+  icon: 'box'
+  color: 'gray-dark'
