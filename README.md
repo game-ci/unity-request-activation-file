@@ -1,6 +1,6 @@
 # Unity - Request Activation File
 
-[![Actions status](https://github.com/WebberTakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg)](https://github.com/WebberTakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg)
+[![Actions status](https://github.com/webbertakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg)](https://github.com/webbertakken/unity-request-manual-activation-file/actions?query=branch%3Amaster+workflow%3A"Actions+😎")
 
 [Github Action](https://github.com/features/actions) for requesting the manual activation file, used to acquire a Unity personal license.
 
