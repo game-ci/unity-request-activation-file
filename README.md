@@ -1,16 +1,23 @@
 # Unity - Request Activation File
-
 [![Actions status](https://github.com/webbertakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg)](https://github.com/webbertakken/unity-request-manual-activation-file/actions?query=branch%3Amaster+workflow%3A"Actions+😎")
 
-[Github Action](https://github.com/features/actions) for requesting the manual activation file, used to acquire a Unity personal license.
+---
 
-Required for the 
+GitHub Action for
+[requesting the manual activation file](https://github.com/marketplace/actions/unity-request-activation-file) for Unity.
+
+Part of the 
+[Unity Actions](https://github.com/webbertakken/unity-actions) 
+collection.
+
+---
+
+Use this action to acquire a Unity personal license. Required in order to
+use the 
 [Activate](https://github.com/webbertakken/unity-actions#activate),
 [Test](https://github.com/webbertakken/unity-actions#test) and
 [Build](https://github.com/webbertakken/unity-actions#build)
-actions from the 
-[Unity Actions](https://github.com/webbertakken/unity-actions) 
-collection.
+actions.
 
 ### Documentation
 
@@ -75,3 +82,9 @@ actions.
 Visit 
 [Unity Actions](https://github.com/webbertakken/unity-actions) 
 to find related actions for Unity.
+
+Feel free to contribute.
+
+## Licence 
+
+[MIT](./LICENSE)
