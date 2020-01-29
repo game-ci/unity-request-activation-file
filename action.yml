@@ -1,13 +1,17 @@
 name: 'Unity - Request Activation File'
 author: Webber Takken <webber@takken.io>
 description: 'Request the manual activation file for acquiring a Unity personal license.'
-inputs: {}
+inputs:
+  unityVersion:
+    required: false
+    default: '2019.2.11f1'
+    description: 'Version of unity to use for building the project.'
 outputs:
   filePath:
     description: 'Path of the manual activation file'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
 branding:
   icon: 'box'
   color: 'gray-dark'
+runs:
+  using: 'node12'
+  main: 'action/index.js'
