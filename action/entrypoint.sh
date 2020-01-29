@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-# The container's unity version
-UNITY_VERSION=2019.2.11f1
+#
+# Display the unity version
+#
+
+echo "Retrieving manual activation file for unity version \"$UNITY_VERSION\"."
+
 
 # Determine the expected file name and path
 FILE_NAME=Unity_v$UNITY_VERSION.alf

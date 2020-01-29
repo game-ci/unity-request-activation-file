@@ -1,4 +1,5 @@
-FROM gableroux/unity3d:2019.2.11f1
+ARG IMAGE
+FROM $IMAGE
 
 LABEL "com.github.actions.name"="Unity - Request Activation File"
 LABEL "com.github.actions.description"="Request the manual activation file for activating Unity personal"
