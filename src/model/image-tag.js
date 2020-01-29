@@ -1,14 +1,24 @@
 import { trimStart } from 'lodash-es';
 
 class ImageTag {
-  constructor({ version }) {
+  static createForBase(version) {
+    const repository = 'gableroux';
+    const name = 'unity3d';
+    return new this({ repository, name, version });
+  }
+
+  static createForAction(version) {
+    const repository = '';
+    const name = 'unity-action';
+    return new this({ repository, name, version });
+  }
+
+  constructor({ repository = '', name, version }) {
     if (!ImageTag.versionPattern.test(version)) {
       throw new Error(`Invalid version "${version}".`);
     }
 
-    this.repository = 'gableroux';
-    this.name = 'unity3d';
-    this.version = version;
+    Object.assign(this, { repository, name, version });
   }
 
   static get versionPattern() {
