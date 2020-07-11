@@ -1,92 +1,47 @@
-# Unity - Request Activation File
-
-[![Actions status](https://github.com/webbertakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg?event=push&branch=master)](https://github.com/webbertakken/unity-request-manual-activation-file/actions?query=branch%3Amaster+event%3Apush+workflow%3A"Actions%20%F0%9F%98%8E")
-
----
+<div align="center">
+<a href="https://github.com/marketplace/actions/unity-request-activation-file">
+<img width="800" src="media/UnityRequestActivation-Logo.png" alt="Unity Request Activation">
+</a>
+<br />
+<br />
 
 GitHub Action for
 [requesting the manual activation file](https://github.com/marketplace/actions/unity-request-activation-file) for Unity.
 
-Part of the
-[Unity Actions](https://github.com/webbertakken/unity-actions)
-collection.
+Part of the <a href="https://unity-ci.com"><img height="30" src="media/UnityCI-ReferenceLogo.png" alt="Unity CI"></a> open source project.
+<br />
+<br />
 
----
+[![Actions status](https://github.com/webbertakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg?event=push&branch=master)](https://github.com/webbertakken/unity-request-manual-activation-file/actions?query=branch%3Amaster+event%3Apush+workflow%3A"Actions%20%F0%9F%98%8E")
+<br />
+<br />
 
-Use this action to acquire a Unity personal license. Required in order to
-use the
-[Activate](https://github.com/webbertakken/unity-actions#activate),
-[Test](https://github.com/webbertakken/unity-actions#test) and
-[Build](https://github.com/webbertakken/unity-actions#build)
-actions.
+</div>
 
-### Documentation
+## How to use
 
-See the
-[Unity Actions](https://github.com/webbertakken/unity-actions)
-collection repository for workflow documentation and reference implementation.
+Find the
+[docs](https://unity-ci.com/docs/github)
+on the Unity CI
+[website](https://unity-ci.com/).
 
-## Usage
+## Related actions
 
-Create a file called `.github/workflows/activation.yml` and add a job to it.
+Visit the
+<a href="https://github.com/webbertakken/unity-actions"><img height="30" src="media/UnityActions-ReferenceLogo.png" alt="Unity Actions"></a>
+status repository for related Actions.
 
-```yaml
-name: Acquire activation file
-on: [push]
-jobs:
-  activation:
-    name: Request manual activation file 🔑
-    runs-on: ubuntu-latest
-    steps:
-```
+## Community
 
-To **configure** this action, add this step and set the id.
+Feel free to join us on
+<a href="http://unity-ci.com/discord"><img height="30" src="media/Discord-Logo.svg" alt="Discord" /></a>
+and engage with the community.
 
-```yaml
-# Request manual activation file
-- name: Request manual activation file
-  id: getManualLicenseFile
-  uses: webbertakken/unity-request-manual-activation-file@v1.1
-  with:
-    unityVersion: 2019.2.11f1
-```
+## Contributing
 
-You use the id to **upload the output file** like so:
+To help out sharpen the documentation, please find the docs [repository](https://github.com/Unity-CI/Website).
 
-```yaml
-# Upload artifact (Unity_v20XX.X.XXXX.alf)
-- name: Expose as artifact
-  uses: actions/upload-artifact@v1
-  with:
-    name: ${{ steps.getManualLicenseFile.outputs.filePath }}
-    path: ${{ steps.getManualLicenseFile.outputs.filePath }}
-```
-
-Commit and push your workflow definition.
-
-## Activation
-
-Follow these (one-time) steps for simple activation.
-
-- Download the manual activation file that now appeared as an artifact.
-- Visit [license.unity3d.com](https://license.unity3d.com/manual) and upload it.
-- You should now receive your license file (Unity_v20XX.x.ulf) as a download.
-- Open `Github` > `Your repository` > `Settings` > `Secrets`.
-- Add a new secret called `UNITY_LICENSE` and copy the contents your license file into it.
-
-You can now use the
-[Activate](https://github.com/webbertakken/unity-actions#activate),
-[Test](https://github.com/webbertakken/unity-actions#test) and
-[Build](https://github.com/webbertakken/unity-actions#build)
-actions.
-
-## More actions
-
-Visit
-[Unity Actions](https://github.com/webbertakken/unity-actions)
-to find related actions for Unity.
-
-Feel free to contribute.
+To contribute to this project, kindly read the [contribution guide](./CONTRIBUTING.md).
 
 ## Licence
 
