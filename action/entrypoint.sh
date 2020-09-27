@@ -20,8 +20,8 @@ xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
     -quit \
     -createManualActivationFile
 
-  # Catch exit code
-  UNITY_EXIT_CODE=$?
+# Catch exit code
+UNITY_EXIT_CODE=$?
 
 # Output the resulting file by copying
 cp $FILE_NAME $HOME/$FILE_PATH
@@ -29,8 +29,8 @@ cp $FILE_NAME $HOME/$FILE_PATH
 # Set resulting name as output variable
 echo ::set-output name=filePath::$FILE_PATH
 
-
-if [[ $UNITY_EXIT_CODE -eq 0 ]]; then
+# Unity exits with exit code 1 for success cases
+if [[ $UNITY_EXIT_CODE -eq 0 ]] || [[ $UNITY_EXIT_CODE -eq 1 ]]; then
   echo ""
   echo "###########################"
   echo "#        Succeeded        #"
