@@ -29,7 +29,6 @@ cp $FILE_NAME $HOME/$FILE_PATH
 # Set resulting name as output variable
 echo ::set-output name=filePath::$FILE_PATH
 
-# Unity exits with exit code 1 for success cases
 if [[ $UNITY_EXIT_CODE -eq 0 ]] || [[ $UNITY_EXIT_CODE -eq 1 ]]; then
   echo ""
   echo "###########################"
@@ -40,7 +39,8 @@ if [[ $UNITY_EXIT_CODE -eq 0 ]] || [[ $UNITY_EXIT_CODE -eq 1 ]]; then
   echo ""
   echo "Set the contents of the resulting license file as the \$UNITY_LICENSE variabe."
   echo ""
-  exit $UNITY_EXIT_CODE
+  # Unity exits with exit code 1 for success cases
+  exit 0
 else
   echo ""
   echo "###########################"

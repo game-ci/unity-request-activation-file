@@ -14,7 +14,7 @@ class Action {
   }
 
   static get name() {
-    return 'unity-request-manual-activation-file';
+    return 'unity-request-activation-file';
   }
 
   static get rootFolder() {
