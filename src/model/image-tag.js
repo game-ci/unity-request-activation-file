@@ -34,7 +34,7 @@ class ImageTag {
   }
 
   toString() {
-    return `${this.image}:${this.tag}`;
+    return `${this.image}:${this.tag}-0`;
   }
 }
 
