@@ -13,13 +13,13 @@ describe('Docker', () => {
     });
 
     const baseImage = {
-      toString: () => image.toString().slice(0, image.toString().lastIndexOf('-')),
+      toString: () => image.toString().slice(0, image.toString().lastIndexOf('-base-0')),
       version: image.version,
     };
 
     const tag = await Docker.build({ path, dockerfile, baseImage }, true);
 
     expect(tag).toBeInstanceOf(ImageTag);
-    expect(tag.toString()).toStrictEqual('unity-action:3-0');
+    expect(tag.toString()).toStrictEqual('unity-action:3-base-0');
   }, 240000);
 });
