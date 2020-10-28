@@ -12,13 +12,12 @@ FILE_NAME=Unity_v$UNITY_VERSION.alf
 FILE_PATH=$FILE_NAME
 
 # Request the manual activation file for activating unity personal
-xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
-  /opt/Unity/Editor/Unity \
-    -batchmode \
-    -nographics \
-    -logFile /dev/stdout \
-    -quit \
-    -createManualActivationFile
+unity-editor \
+  -batchmode \
+  -nographics \
+  -logFile /dev/stdout \
+  -quit \
+  -createManualActivationFile
 
 # Catch exit code
 UNITY_EXIT_CODE=$?
