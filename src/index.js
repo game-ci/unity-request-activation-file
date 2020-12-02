@@ -6,8 +6,8 @@ async function action() {
   Action.checkCompatibility();
 
   const { dockerfile, workspace, actionFolder } = Action;
-  const { unityVersion } = Input.getFromUser();
-  const baseImage = ImageTag.createForBase(unityVersion);
+  const { unityVersion, customImage } = Input.getFromUser();
+  const baseImage = ImageTag.createForBase({ version: unityVersion, customImage });
 
   // Build docker image
   const actionImage = await Docker.build({ path: actionFolder, dockerfile, baseImage });
