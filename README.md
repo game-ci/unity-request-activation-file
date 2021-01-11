@@ -17,7 +17,7 @@ Part of the <a href="https://game.ci">GameCI</a> open source project.
 
 Find the
 [docs](https://game.ci/docs)
-on the Unity CI
+on the GameCI
 [website](https://game.ci/).
 
 ## Related actions
