@@ -6,6 +6,10 @@ inputs:
     required: false
     default: '2019.2.11f1'
     description: 'Version of unity to use for building the project.'
+  customImage:
+    required: false
+    default: ''
+    description: 'Specific docker image that should be used to request activation file'
 outputs:
   filePath:
     description: 'Path of the manual activation file'
