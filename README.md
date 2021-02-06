@@ -9,16 +9,16 @@ Part of the <a href="https://game.ci">GameCI</a> open source project.
 <br />
 <br />
 
-[![Actions status](https://github.com/webbertakken/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg?event=push&branch=master)](https://github.com/webbertakken/unity-request-manual-activation-file/actions?query=branch%3Amaster+event%3Apush+workflow%3A"Actions%20%F0%9F%98%8E")
+[![Actions status](https://github.com/game-ci/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg?event=push&branch=main)](https://github.com/game-ci/unity-request-manual-activation-file/actions?query=branch%3Amain+event%3Apush+workflow%3A"Actions%20%F0%9F%98%8E")
 <br />
 <br />
 
 ## How to use
 
 Find the
-[docs](https://game.ci/docs)
+[docs](https://game.ci/docs/github/activation)
 on the GameCI
-[website](https://game.ci/).
+[documentation website](https://game.ci/docs).
 
 ## Related actions
 
