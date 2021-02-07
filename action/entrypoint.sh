@@ -36,7 +36,7 @@ if [[ $UNITY_EXIT_CODE -eq 0 ]] || [[ $UNITY_EXIT_CODE -eq 1 ]]; then
   echo ""
   echo "1. Use the file \"$FILE_PATH\" for manual activation at https://license.unity3d.com/manual"
   echo "2. Create a GitHub secret with the content of the resulting license file"
-  echo "3. set the \$UNITY_LICENSE variable to your newly created secret."
+  echo "3. set the \$UNITY_LICENSE variable to your newly created secret"
   echo "For more information see https://game.ci/docs/github/activation"
   echo ""
   # Unity exits with exit code 1 for success cases
