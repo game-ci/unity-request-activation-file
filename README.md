@@ -9,7 +9,7 @@ Part of the <a href="https://game.ci">GameCI</a> open source project.
 <br />
 <br />
 
-[![Actions status](https://github.com/game-ci/unity-request-manual-activation-file/workflows/Actions%20%F0%9F%98%8E/badge.svg?event=push&branch=main)](https://github.com/game-ci/unity-request-manual-activation-file/actions?query=branch%3Amain+event%3Apush+workflow%3A"Actions%20%F0%9F%98%8E")
+[![Actions status](https://github.com/game-ci/unity-request-activation-file/actions/workflows/main.yml/badge.svg)](https://github.com/game-ci/unity-request-activation-file/actions/workflows/main.yml)
 <br />
 <br />
 
