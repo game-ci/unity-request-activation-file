@@ -1,7 +1,7 @@
 name: Actions 😎
 on:
   pull_request: {}
-  push: { branches: [master] }
+  push: { branches: [main] }
 
 jobs:
   tests:
@@ -16,7 +16,7 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run: yarn build || { echo "build command should always succeed" ; exit 61; }
-      - run: yarn build --quiet && git diff --quiet action || { echo "action should be auto generated" ; exit 62; }
+  #      - run: yarn build --quiet && git diff --quiet dist || { echo "dist should be auto generated" ; exit 62; }
 
   requestManualActivationFile:
     name: Request manual activation file 🔑
