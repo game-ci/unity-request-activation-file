@@ -274,18 +274,18 @@ class ImageTag {
         }
     }
     get tag() {
-        return `${this.version}-${this.builderPlatform}`.replace(/-+$/, '');
+        const dockerRepoVersion = 1;
+        const versionAndTargetPlatform = `${this.version}-${this.builderPlatform}`.replace(/-+$/, '');
+        return `ubuntu-${versionAndTargetPlatform}-${dockerRepoVersion}`;
     }
     get image() {
         return `${this.repository}/${this.name}`.replace(/^\/+/, '');
     }
     toString() {
         const { image, tag, customImage } = this;
-        if (customImage && customImage !== '') {
+        if (customImage)
             return customImage;
-        }
-        const dockerRepoVersion = 0;
-        return `${image}:${tag}-${dockerRepoVersion}`;
+        return `${image}:${tag}`;
     }
 }
 exports["default"] = ImageTag;
