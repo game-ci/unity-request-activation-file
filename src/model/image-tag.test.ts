@@ -16,7 +16,7 @@ describe('ImageTag', () => {
     it('returns the correct version', () => {
       const image = new ImageTag('2099.1.1111', '');
 
-      expect(image.toString()).toStrictEqual(`unityci/editor:2099.1.1111-linux-il2cpp-0`);
+      expect(image.toString()).toStrictEqual(`unityci/editor:ubuntu-2099.1.1111-linux-il2cpp-1`);
     });
   });
 });
