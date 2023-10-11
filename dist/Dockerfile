@@ -1,5 +1,5 @@
 ARG IMAGE
-FROM $IMAGE
+FROM unityci/editor:ubuntu-2022.3.10f1-linux-il2cpp-2
 
 LABEL "com.github.actions.name"="Unity - Request Activation File"
 LABEL "com.github.actions.description"="Request the manual activation file for activating Unity personal"
