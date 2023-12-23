@@ -103,7 +103,7 @@ class ImageTag {
   }
 
   get tag() {
-    const dockerRepoVersion = 1;
+    const dockerRepoVersion = 3;
 
     const versionAndTargetPlatform = `${this.version}-${this.builderPlatform}`.replace(/-+$/, '');
 
