@@ -1,6 +1,6 @@
 {
   "name": "unity-request-manual-activation-file",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "Request the manual activation file for acquiring a Unity personal license.",
   "main": "dist/index.js",
   "repository": "git@github.com:game-ci/unity-request-manual-activation-file.git",
@@ -11,18 +11,15 @@
     "build": "tsc && ncc build lib --source-map --license licenses.txt",
     "lint": "prettier --check \"src/**/*.{js,ts}\" && eslint src/**/*.ts",
     "format": "prettier --write \"src/**/*.{js,ts}\"",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@actions/core": "^1.9.1",
-    "@actions/exec": "^1.0.4",
-    "@actions/github": "^2.2.0",
-    "@octokit/core": "^3.5.1"
+    "@actions/core": "^1.9.1"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
-    "@types/node": "^17.0.8",
+    "@types/node": "^20.10.5",
     "@typescript-eslint/parser": "^5.9.0",
     "@vercel/ncc": "^0.33.1",
     "eslint": "^8.6.0",
@@ -30,7 +27,7 @@
     "eslint-plugin-github": "^4.3.5",
     "eslint-plugin-jest": "^25.3.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-unicorn": "^40.0.0",
+    "eslint-plugin-unicorn": "^50.0.1",
     "husky": "^7.0.4",
     "jest": "^26.6.3",
     "jest-circus": "^26.6.3",
@@ -44,7 +41,7 @@
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint",
-      "jest --findRelatedTests"
+      "jest --findRelatedTests --passWithNoTests"
     ],
     "*.{json,md,yaml,yml}": [
       "prettier --write"

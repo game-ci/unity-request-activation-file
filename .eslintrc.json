@@ -1,10 +1,19 @@
 {
   "plugins": ["jest", "@typescript-eslint", "prettier", "unicorn"],
-  "extends": ["plugin:unicorn/recommended", "plugin:github/recommended", "prettier"],
+  "extends": [
+    "plugin:unicorn/recommended",
+    "plugin:github/recommended",
+    "plugin:prettier/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 9,
-    "sourceType": "module"
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "extraFileExtensions": [".mjs"],
+    "ecmaFeatures": {
+      "impliedStrict": true
+    },
+    "project": "./tsconfig.json"
   },
   "env": {
     "node": true,
@@ -17,6 +26,7 @@
     "import/no-namespace": "off",
     "filenames/match-regex": "off",
     "unicorn/prefer-node-protocol": "off",
-    "unicorn/prefer-module": "off"
+    "unicorn/prefer-module": "off",
+    "i18n-text/no-en": "off"
   }
 }
