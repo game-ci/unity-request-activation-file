@@ -1,8 +1,6 @@
 name: 'Unity - Request Activation File'
 author: Webber Takken <webber@takken.io>
 description: '[DEPRECATED] Request the manual activation file for acquiring a Unity personal license.'
-inputs:
-outputs:
 branding:
   icon: 'box'
   color: 'gray-dark'
