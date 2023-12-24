@@ -2,6 +2,8 @@
 
 (Not affiliated with Unity Technologies)
 
+**This action is no longer maintained and should not be used. Please follow the [updated activation steps](https://game.ci/docs/github/activation) for v4 and newer of Unity Actions.**
+
 GitHub Action for
 [requesting the manual activation file](https://github.com/marketplace/actions/unity-request-activation-file) for Unity.
 
