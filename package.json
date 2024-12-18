@@ -15,7 +15,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@actions/core": "^1.9.1"
+    "@actions/core": "^1.11.1"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
